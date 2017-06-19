@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Art Galery</title>
+</head>
+
+<body>
+    <!-- FIN HEADER -->
+    <header>
+        <h1><a href="index.html">Street Art Gallery</a></h1>
+        <img src="img-layout/logo-bis-1.png" alt="">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="index.html">accueil</a></li>
+                <li><a href="liste-artistes.html">artistes</a></li>
+                <li><a href="agenda.html">évenements</a></li>
+                <li><a href="contact.html">contacts</a></li>
+            </ul>
+            <div class="lang clearfix">
+                <a href="#">FR</a>
+                <a href="#">EN</a>
+            </div>
+        </nav>
+        <img class="mg-burger closed" src="img-content/menu.png" alt="">
+        <img class="mg-close-burger closed" src="img-content/close.png" alt="">
+        <ul class="mg-responsiv closed">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="liste-artistes.html">Nos artistes</a></li>
+            <li><a href="agenda.html">évènements</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+    </header>
+    <!-- FIN HEADER -->
+    <!-- MAIN -->
+    <main class="contact">
+        <div class="mh-container-contact">
+            <h2>Contacts</h2>
+            <div>
+                <div class="mh-contact clearfix">
+                    <div>
+                        <img src="img-content/img-21.jpg" alt="MG" class="mh-photo">
+                    </div>
+                    <div>
+                        <h3>Masis GULMEZ</h3>
+                        <h4>Producteur</h4>
+                        <div>
+                            <ul class="clearfix">
+                                <li>
+                                    <div>
+                                        <img src="img-content/img-phone.svg" alt="phone" class="mh-icone">
+                                    </div>
+                                    <div>
+                                        <p>06. 54. 53. 58. 00</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="img-content/img-email.svg" alt="email" class="mh-icone">
+                                    </div>
+                                    <div>
+                                        <p>m.gulmez@gmail.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mh-contact clearfix">
+                    <div>
+                        <img src="img-content/img-22.jpg" alt="HG" class="mh-photo">
+                    </div>
+                    <div>
+                        <h3>Mélanie HERAULT</h3>
+                        <h4>Galériste</h4>
+                        <div>
+                            <ul class="clearfix">
+                                <li>
+                                    <div>
+                                        <img src="img-content/img-phone.svg" alt="phone" class="mh-icone">
+                                    </div>
+                                    <div>
+                                        <p>06. 54. 53. 58. 01</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="img-content/img-email.svg" alt="email" class="mh-icone">
+                                    </div>
+                                    <div>
+                                        <p>m.herault@gmail.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Où nous trouver ?</h2>
+                <div id="map"></div>
+                <script>
+                function initMap() {
+                    var uluru = {
+                        lat: 48.85661400000001,
+                        lng: 2.3522219000000177
+                    };
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 12,
+                        center: uluru,
+                        scrollwheel: false
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+                </script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC69SUMS6dBDi7oImJNO51QXKM9zczFf9M&callback=initMap">
+                </script>
+            </div>
+        </div>
+    </main>
+    <!-- FIN MAIN -->
+    <!-- FOOTER -->
+    <footer>
+        <nav>
+            <ul class="clearfix">
+                <li>
+                    <a href="#"><img src="img-layout/facebook.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/instagram.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/twitter.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img-layout/pinterest.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="clearfix">
+            <nav>
+                <p>Sections</p>
+                <ul>
+                    <li><a href="#">évènements</a></li>
+                    <li><a href="#">actualités</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Liens</p>
+                <ul>
+                    <li><a href="#">mentions légales</a></li>
+                    <li><a href="#">contacts</a></li>
+                </ul>
+            </nav>
+            <p>Copyright © 2017 - Tous droits réservés.</p>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/slider.js"></script> -->
+</body>
+
+</html>
